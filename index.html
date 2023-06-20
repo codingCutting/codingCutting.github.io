@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제 첫 깃허브 블로그다옹</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        li {
+            list-style-type: none;
+        }
+        li a{
+            text-decoration: none;
+        }
+        #ex {
+            cursor:pointer;
+        }
+        .exs {
+            display: none;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#ex").click(function(){
+                $(".exs").css("display", "block");
+            })
+        })
+    </script>
+    <title>포트폴리오</title>
 </head>
 <body>
-    <a href="https://codingCutting.github.io/TOSS">TOSS</a>
+    <ul>
+        <li><a href="https://codingCutting.github.io/TOSS">TOSS</a></li>
+        <li id="ex">포폴예제</a>
+            <ul class="exs">
+                <li><a href="https://codingCutting.github.io/todoExample/ex1/step8">1</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex2/step6">2</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex3/step6">3</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex4">4</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex5/step5">5</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex6/step7">6</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex7/step7">7</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex8">8</a></li>
+                <li><a href="https://codingCutting.github.io/todoExample/ex9">9</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    
 </body>
 </html>
